@@ -46,8 +46,8 @@ const getWeatherForCity = async (city) => {
   try {
     const promisesArray = urlsArray.map(async (url) => {
       const response = await fetch(url);
-      //   console.log("response", response);
-      if (!response.statusText) {
+      console.log("response", response);
+      if (!response.ok) {
         throw new Error("something went wrong");
       }
       const result = await response.json();
