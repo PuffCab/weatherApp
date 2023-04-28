@@ -38,9 +38,9 @@ const getWeatherForCity = async (city) => {
   const containerData = document.getElementById("data-to-display");
   containerData.classList.add("invisible");
 
-  let url = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&aqi=no&alerts=no`;
+  let url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&aqi=no&alerts=no`;
 
-  let url2 = `http://api.weatherapi.com/v1/astronomy.json?key=${API_KEY}&q=${city}&dt=${new Date()}`;
+  let url2 = `https://api.weatherapi.com/v1/astronomy.json?key=${API_KEY}&q=${city}&dt=${new Date()}`;
 
   const urlsArray = [url, url2];
   try {
