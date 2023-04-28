@@ -54,7 +54,7 @@ const getWeatherForCity = async (city) => {
       return result;
     });
     // console.log("promisesArray", promisesArray);
-    askljnjkkkskkaka;
+
     const responsesArray = await Promise.all(promisesArray);
     const weatherData = responsesArray[0];
     const astronomyData = responsesArray[1];
