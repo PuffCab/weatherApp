@@ -30,6 +30,7 @@ async function showPosition(position) {
 }
 
 const getWeatherForCity = async (city) => {
+  const API_KEY = "18608637f624481ea33201750220704";
   // show spinner
   const spinner = document.getElementById("spinner");
   spinner.classList.remove("invisible");
